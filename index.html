@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch Stream Viewer</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="navbar" id="navbar-top">
+  <div class = "container">
+    <i id = "logo" class = "fa fa-twitch white floatl" aria-hidden="true">
+    </i>
+    <div class = "title floatl">
+      Tw@tch
+    </div>
+    <div id = "controls" class = "floatr">
+      <form id = "addFormId" name = "addFormName" action = "" method = "GET" class = "iblock floatl" autocomplete= "off" onSubmit = "return false">
+        <input id = "addField" type = "text" name = "searchbox" class = "searchfield" value = "" placeholder = "Add Streamer">
+      </form>
+      <i id = "addbtn" class="fa fa-plus formbtns" aria-hidden="true" onClick = "addStreamer(addFormName)">
+      </i>
+      <i id = "reqbtn" class="fa fa-refresh formbtns" aria-hidden="true">
+      </i>
+    </div>
+  </div>
+</div>
+
+<div id = "content">
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
